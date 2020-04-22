@@ -53,14 +53,14 @@ namespace scraper
                     key = Registry.CurrentUser.CreateSubKey("COVID19");
                     key.SetValue("Stats", stats);
                     key.Close();
-                    Console.WriteLine("Key created.");
                 }
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.ToString());
             }
-            //Console.ReadLine();
+            Console.WriteLine("Press Enter to exit...");
+            Console.ReadLine();
         }
     }
 }
